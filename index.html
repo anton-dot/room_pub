@@ -1,46 +1,93 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
   <base href="/">
-
   <meta charset="UTF-8">
-  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="RoomVibe — room and interior planner">
-
-  <!-- iOS meta tags & icons -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#F5F7F2">
+  <meta name="description" content="RoomVibe — планировщик комнат, квартир и домов в 2D и 3D">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="RoomVibe">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>RoomVibe</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <link rel="manifest" href="manifest.json">
+  <title>RoomVibe</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, "Segoe UI", sans-serif; background: #f5f7f2; color: #244f3b; }
+    body { margin: 0; }
+    #roomvibe-loading { position: fixed; inset: 0; z-index: 99999; display: grid; place-items: center; overflow: auto; background: radial-gradient(ellipse at 50% 40%, #fbfcf8, #f5f7f2 65%); transition: opacity .22s ease; }
+    #roomvibe-loading.leaving { opacity: 0; pointer-events: none; }
+    .loading-content { padding: 24px; text-align: center; max-width: 440px; box-sizing: border-box; width: 100%; }
+    .apartment { display: block; width: min(100%, 360px); margin: 0 auto; aspect-ratio: 380/320; }
+    .piece { transform-box: fill-box; transform-origin: center; animation: assemble 4.2s cubic-bezier(.2,.7,.2,1) infinite both; filter: drop-shadow(0 3px 4px #365b4120); }
+    .piece:nth-of-type(2) { animation-delay: .23s; }
+    .piece:nth-of-type(3) { animation-delay: .46s; }
+    .piece:nth-of-type(4) { animation-delay: .69s; }
+    .piece:nth-of-type(5) { animation-delay: .92s; }
+    .piece:nth-of-type(6) { animation-delay: 1.15s; }
+    @keyframes assemble {
+      0% { opacity: 0; transform: translate(var(--x), var(--y)) rotate(var(--r)); }
+      40%, 85% { opacity: 1; transform: translate(0,0) rotate(0); }
+      100% { opacity: 0; transform: translate(0,0); }
+    }
+    h1 { margin: 0; font-size: 36px; line-height: 1.2; font-weight: 700; letter-spacing: -1.5px; }
+    .tagline { margin: 10px 0 16px; color: #3d5948; font-size: 18px; }
+    #loading-status, #loading-hint { color: #748076; font-size: 13px; line-height: 1.5; margin: 0; }
+    #loading-hint { margin-top: 12px; }
+    #loading-retry { margin-top: 20px; padding: 12px 24px; border: 0; border-radius: 24px; background: #296448; color: white; font: inherit; cursor: pointer; }
+    #loading-retry:focus-visible { outline: 3px solid #91b3a0; outline-offset: 4px; }
+    .failed .piece { animation: none; opacity: 1; }
+    @media (max-height: 460px) { .apartment { width: 200px; } h1 { font-size: 28px; } .tagline { margin-bottom: 10px; } }
+    @media (prefers-reduced-motion: reduce) { .piece { animation: none; opacity: 1; } #roomvibe-loading { transition: none; } }
+  </style>
 </head>
 <body>
-  <!--
-    You can customize the "flutter_bootstrap.js" script.
-    This is useful to provide a custom configuration to the Flutter loader
-    or to give the user feedback during the initialization process.
-
-    For more details:
-    * https://docs.flutter.dev/platform-integration/web/initialization
-  -->
-  <script src="flutter_bootstrap.js" async></script>
+  <div id="roomvibe-loading" role="status" aria-live="polite" aria-busy="true">
+    <div class="loading-content">
+      <svg class="apartment" viewBox="-70 -62 380 320" aria-hidden="true" focusable="false">
+        <defs><pattern id="plan-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#e1e8de" stroke-width=".6"/></pattern></defs>
+        <rect x="-50" y="-40" width="350" height="280" fill="url(#plan-grid)"/>
+        <g fill="none" stroke="#d3ddcf" stroke-width="1.2">
+          <rect x="12" y="12" width="112" height="88" rx="3"/><rect x="132" y="12" width="96" height="88" rx="3"/>
+          <rect x="12" y="108" width="80" height="76" rx="3"/><rect x="100" y="108" width="52" height="40" rx="3"/>
+          <rect x="100" y="156" width="128" height="28" rx="3"/><rect x="160" y="108" width="68" height="40" rx="3"/>
+        </g>
+        <g class="pieces">
+          <g class="piece" style="--x:-90px;--y:-60px;--r:-10deg">
+            <rect x="12" y="12" width="112" height="88" rx="3" fill="#dfe9dd" stroke="#48634c" stroke-width="3"/>
+            <g fill="#789786"><rect x="26" y="34" width="17" height="42" rx="2"/><rect x="26" y="68" width="48" height="14" rx="2"/><rect x="94" y="22" width="18" height="4" rx="2"/></g><rect x="58" y="42" width="30" height="18" rx="6" fill="#c6a67d"/>
+          </g>
+          <g class="piece" style="--x:90px;--y:-65px;--r:10deg">
+            <rect x="132" y="12" width="96" height="88" rx="3" fill="#eadcc5" stroke="#48634c" stroke-width="3"/>
+            <rect x="156" y="31" width="46" height="52" rx="2" fill="#c6a67d"/><rect x="159" y="34" width="40" height="46" rx="2" fill="#f9faf6"/>
+            <g fill="#dfe9dd"><rect x="161" y="37" width="16" height="10" rx="2"/><rect x="181" y="37" width="16" height="10" rx="2"/></g><rect x="159" y="54" width="40" height="26" rx="2" fill="#789786"/>
+          </g>
+          <g class="piece" style="--x:-90px;--y:65px;--r:-10deg">
+            <rect x="12" y="108" width="80" height="76" rx="3" fill="#d0e1da" stroke="#48634c" stroke-width="3"/>
+            <g fill="#f9faf6"><rect x="21" y="117" width="15" height="57" rx="2"/><rect x="36" y="159" width="43" height="15" rx="2"/></g><rect x="50" y="123" width="28" height="21" rx="5" fill="#c6a67d"/>
+          </g>
+          <g class="piece" style="--x:90px;--y:65px;--r:10deg">
+            <rect x="100" y="108" width="52" height="40" rx="3" fill="#e4e9e3" stroke="#48634c" stroke-width="3"/>
+            <g fill="#f9faf6"><rect x="107" y="115" width="13" height="26" rx="5"/><rect x="128" y="117" width="16" height="13" rx="6"/></g>
+          </g>
+          <g class="piece" style="--x:0px;--y:95px;--r:-10deg">
+            <rect x="100" y="156" width="128" height="28" rx="3" fill="#e9e5d8" stroke="#48634c" stroke-width="3"/><rect x="174" y="164" width="42" height="12" rx="2" fill="#c6a67d"/>
+          </g>
+          <g class="piece" style="--x:95px;--y:0px;--r:10deg">
+            <rect x="160" y="108" width="68" height="40" rx="3" fill="#dce6d5" stroke="#48634c" stroke-width="3"/><rect x="170" y="117" width="48" height="12" rx="2" fill="#789786"/><rect x="190" y="133" width="12" height="8" rx="2" fill="#c6a67d"/>
+          </g>
+        </g>
+      </svg>
+      <h1>RoomVibe</h1>
+      <p class="tagline">Собираем пространство</p>
+      <p id="loading-status">Загружаем приложение…</p>
+      <p id="loading-hint" hidden></p>
+      <button id="loading-retry" type="button" hidden>Попробовать снова</button>
+      <noscript><p>Для работы RoomVibe включите JavaScript в браузере.</p></noscript>
+    </div>
+  </div>
+  <script src="loading.js"></script>
+  <script src="flutter_bootstrap.js" async onerror="window.roomVibeLoading.fail()"></script>
 </body>
 </html>
