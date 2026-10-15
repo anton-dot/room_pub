@@ -1,0 +1,117 @@
+{
+  "series": "II-49",
+  "scope": "5 published examples + their reflections; not an exhaustive series or address inventory",
+  "address": "Москва, Карельский бульвар, 8к1: соответствие типов квартир не подтверждено",
+  "entries": [
+    {
+      "id": "mniitep-2-1",
+      "title": "МНИИТЭП II-49.2.1",
+      "subtitle": "Каталог 2011, лист 35. С балконом; исходный план.",
+      "source": "https://tipdoma.com/wp-content/uploads/MNIITEP.pdf",
+      "sheet": 35,
+      "mirrored": false,
+      "file": "mniitep-2-1.roomvibe.json",
+      "preview": "mniitep-2-1.png",
+      "geometry": "axis contours; unlabelled offsets estimated"
+    },
+    {
+      "id": "mniitep-2-1-mirror",
+      "title": "МНИИТЭП II-49.2.1 - зеркальная",
+      "subtitle": "Каталог 2011, лист 35. С балконом; исходный план.",
+      "source": "https://tipdoma.com/wp-content/uploads/MNIITEP.pdf",
+      "sheet": 35,
+      "mirrored": true,
+      "file": "mniitep-2-1-mirror.roomvibe.json",
+      "preview": "mniitep-2-1-mirror.png",
+      "geometry": "axis contours; unlabelled offsets estimated"
+    },
+    {
+      "id": "mniitep-2-2",
+      "title": "МНИИТЭП II-49.2.2",
+      "subtitle": "Каталог 2011, лист 36. С балконом; исходный план.",
+      "source": "https://tipdoma.com/wp-content/uploads/MNIITEP.pdf",
+      "sheet": 36,
+      "mirrored": false,
+      "file": "mniitep-2-2.roomvibe.json",
+      "preview": "mniitep-2-2.png",
+      "geometry": "axis contours; unlabelled offsets estimated"
+    },
+    {
+      "id": "mniitep-2-2-mirror",
+      "title": "МНИИТЭП II-49.2.2 - зеркальная",
+      "subtitle": "Каталог 2011, лист 36. С балконом; исходный план.",
+      "source": "https://tipdoma.com/wp-content/uploads/MNIITEP.pdf",
+      "sheet": 36,
+      "mirrored": true,
+      "file": "mniitep-2-2-mirror.roomvibe.json",
+      "preview": "mniitep-2-2-mirror.png",
+      "geometry": "axis contours; unlabelled offsets estimated"
+    },
+    {
+      "id": "mniitep-2-3",
+      "title": "МНИИТЭП II-49.2.3",
+      "subtitle": "Каталог 2011, лист 41. Без балкона; исходный план.",
+      "source": "https://tipdoma.com/wp-content/uploads/MNIITEP.pdf",
+      "sheet": 41,
+      "mirrored": false,
+      "file": "mniitep-2-3.roomvibe.json",
+      "preview": "mniitep-2-3.png",
+      "geometry": "axis contours; unlabelled offsets estimated"
+    },
+    {
+      "id": "mniitep-2-3-mirror",
+      "title": "МНИИТЭП II-49.2.3 - зеркальная",
+      "subtitle": "Каталог 2011, лист 41. Без балкона; исходный план.",
+      "source": "https://tipdoma.com/wp-content/uploads/MNIITEP.pdf",
+      "sheet": 41,
+      "mirrored": true,
+      "file": "mniitep-2-3-mirror.roomvibe.json",
+      "preview": "mniitep-2-3-mirror.png",
+      "geometry": "axis contours; unlabelled offsets estimated"
+    },
+    {
+      "id": "bti-a",
+      "title": "БТИ A - компактная двушка",
+      "subtitle": "Комнаты: 3,16 × 5,95 и 2,565 × 3,565 м; кухня 2,45 × 2,45 м.",
+      "source": "https://gsps.ru/home_series/ii-49.php",
+      "sheet": null,
+      "mirrored": false,
+      "file": "bti-a.roomvibe.json",
+      "preview": "bti-a.png",
+      "geometry": "BTI tracing; service geometry estimated"
+    },
+    {
+      "id": "bti-a-mirror",
+      "title": "БТИ A - компактная двушка - зеркальная",
+      "subtitle": "Комнаты: 3,16 × 5,95 и 2,565 × 3,565 м; кухня 2,45 × 2,45 м.",
+      "source": "https://gsps.ru/home_series/ii-49.php",
+      "sheet": null,
+      "mirrored": true,
+      "file": "bti-a-mirror.roomvibe.json",
+      "preview": "bti-a-mirror.png",
+      "geometry": "BTI tracing; service geometry estimated"
+    },
+    {
+      "id": "bti-b",
+      "title": "БТИ B - двушка с нишей",
+      "subtitle": "Комнаты: 3,16 × 5,93 и 2,56 × 4,55 м; кухня 2,56 × 2,31 м.",
+      "source": "https://gsps.ru/home_series/ii-49.php",
+      "sheet": null,
+      "mirrored": false,
+      "file": "bti-b.roomvibe.json",
+      "preview": "bti-b.png",
+      "geometry": "BTI tracing; service geometry estimated"
+    },
+    {
+      "id": "bti-b-mirror",
+      "title": "БТИ B - двушка с нишей - зеркальная",
+      "subtitle": "Комнаты: 3,16 × 5,93 и 2,56 × 4,55 м; кухня 2,56 × 2,31 м.",
+      "source": "https://gsps.ru/home_series/ii-49.php",
+      "sheet": null,
+      "mirrored": true,
+      "file": "bti-b-mirror.roomvibe.json",
+      "preview": "bti-b-mirror.png",
+      "geometry": "BTI tracing; service geometry estimated"
+    }
+  ]
+}

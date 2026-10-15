@@ -1,0 +1,701 @@
+{
+  "version": 4,
+  "id": "mniitep-2-1",
+  "name": "МНИИТЭП II-49.2.1",
+  "updated": "2026-10-03T00:00:00Z",
+  "rooms": [
+    {
+      "id": "living",
+      "name": "Комната 1",
+      "origin": [
+        2.7,
+        0
+      ],
+      "vertices": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.7,
+          0.0
+        ],
+        [
+          2.7,
+          1.0
+        ],
+        [
+          2.7,
+          4.75
+        ],
+        [
+          1.55,
+          4.75
+        ],
+        [
+          0.0,
+          4.75
+        ],
+        [
+          0.0,
+          2.5
+        ]
+      ],
+      "height": 2.64,
+      "thickness": 0.14,
+      "floor": "oak",
+      "wallColor": 4293454303,
+      "furniture": [],
+      "engineering": [],
+      "openings": [
+        {
+          "id": "living-living-door",
+          "wall": 4,
+          "type": "door",
+          "offset": 0.35,
+          "width": 0.8,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        },
+        {
+          "id": "living-window-1",
+          "wall": 0,
+          "type": "window",
+          "offset": 0.65,
+          "width": 1.4,
+          "height": 1.4,
+          "sill": 0.85,
+          "hingeRight": false
+        }
+      ],
+      "wallSpecs": [
+        {
+          "wall": 0,
+          "kind": "exterior",
+          "thickness": 0.3,
+          "note": "Наружная панель: номинально 300 мм по каталогу МНИИТЭП, лист 33."
+        },
+        {
+          "wall": 1,
+          "kind": "bearing",
+          "thickness": 0.14,
+          "note": "Поперечная панель: 140 мм по конструктивной схеме серии; сверить с квартирой."
+        },
+        {
+          "wall": 2,
+          "kind": "bearing",
+          "thickness": 0.14,
+          "note": "Поперечная панель: 140 мм по конструктивной схеме серии; сверить с квартирой."
+        },
+        {
+          "wall": 3,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 4,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 5,
+          "kind": "bearing",
+          "thickness": 0.14,
+          "note": "Поперечная панель: 140 мм по конструктивной схеме серии; сверить с квартирой."
+        },
+        {
+          "wall": 6,
+          "kind": "bearing",
+          "thickness": 0.14,
+          "note": "Поперечная панель: 140 мм по конструктивной схеме серии; сверить с квартирой."
+        }
+      ]
+    },
+    {
+      "id": "bedroom",
+      "name": "Комната 2",
+      "origin": [
+        4.25,
+        1
+      ],
+      "vertices": [
+        [
+          1.15,
+          0.0
+        ],
+        [
+          1.45,
+          0.0
+        ],
+        [
+          4.45,
+          0.0
+        ],
+        [
+          4.45,
+          5.0
+        ],
+        [
+          0.0,
+          5.0
+        ],
+        [
+          0.0,
+          3.75
+        ],
+        [
+          1.15,
+          3.75
+        ]
+      ],
+      "height": 2.64,
+      "thickness": 0.14,
+      "floor": "oak",
+      "wallColor": 4293454303,
+      "furniture": [],
+      "engineering": [],
+      "openings": [
+        {
+          "id": "bedroom-bedroom-door",
+          "wall": 4,
+          "type": "door",
+          "offset": 0.2,
+          "width": 0.8,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        },
+        {
+          "id": "bedroom-balcony-door",
+          "wall": 1,
+          "type": "door",
+          "offset": 1.4,
+          "width": 0.7,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        },
+        {
+          "id": "bedroom-window-2",
+          "wall": 1,
+          "type": "window",
+          "offset": 0.25,
+          "width": 0.8,
+          "height": 1.4,
+          "sill": 0.85,
+          "hingeRight": false
+        }
+      ],
+      "wallSpecs": [
+        {
+          "wall": 0,
+          "kind": "exterior",
+          "thickness": 0.3,
+          "note": "Панель между комнатой и балконом; номинал по серии, уточнить обмером."
+        },
+        {
+          "wall": 1,
+          "kind": "exterior",
+          "thickness": 0.3,
+          "note": "Панель между комнатой и балконом; номинал по серии, уточнить обмером."
+        },
+        {
+          "wall": 2,
+          "kind": "unknown",
+          "thickness": 0.14,
+          "note": "Граница с соседями/лестницей: конструкция и толщина требуют проверки."
+        },
+        {
+          "wall": 3,
+          "kind": "unknown",
+          "thickness": 0.14,
+          "note": "Граница с соседями/лестницей: конструкция и толщина требуют проверки."
+        },
+        {
+          "wall": 4,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 5,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 6,
+          "kind": "bearing",
+          "thickness": 0.14,
+          "note": "Поперечная панель: 140 мм по конструктивной схеме серии; сверить с квартирой."
+        }
+      ]
+    },
+    {
+      "id": "kitchen",
+      "name": "Кухня",
+      "origin": [
+        0,
+        0
+      ],
+      "vertices": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          2.7,
+          0.0
+        ],
+        [
+          2.7,
+          2.5
+        ],
+        [
+          1.65,
+          2.5
+        ],
+        [
+          0.0,
+          2.5
+        ]
+      ],
+      "height": 2.64,
+      "thickness": 0.14,
+      "floor": "tile",
+      "wallColor": 4293454303,
+      "furniture": [],
+      "engineering": [],
+      "openings": [
+        {
+          "id": "kitchen-kitchen-door",
+          "wall": 2,
+          "type": "door",
+          "offset": 0.15,
+          "width": 0.7,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        },
+        {
+          "id": "kitchen-window-0",
+          "wall": 0,
+          "type": "window",
+          "offset": 0.7,
+          "width": 1.3,
+          "height": 1.4,
+          "sill": 0.85,
+          "hingeRight": false
+        }
+      ],
+      "wallSpecs": [
+        {
+          "wall": 0,
+          "kind": "exterior",
+          "thickness": 0.3,
+          "note": "Наружная панель: номинально 300 мм по каталогу МНИИТЭП, лист 33."
+        },
+        {
+          "wall": 1,
+          "kind": "bearing",
+          "thickness": 0.14,
+          "note": "Поперечная панель: 140 мм по конструктивной схеме серии; сверить с квартирой."
+        },
+        {
+          "wall": 2,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 3,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 4,
+          "kind": "unknown",
+          "thickness": 0.14,
+          "note": "Граница с соседями/лестницей: конструкция и толщина требуют проверки."
+        }
+      ]
+    },
+    {
+      "id": "wc",
+      "name": "Туалет",
+      "origin": [
+        0,
+        2.5
+      ],
+      "vertices": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.65,
+          0.0
+        ],
+        [
+          1.65,
+          0.8
+        ],
+        [
+          0.0,
+          0.8
+        ]
+      ],
+      "height": 2.64,
+      "thickness": 0.14,
+      "floor": "tile",
+      "wallColor": 4293454303,
+      "furniture": [],
+      "engineering": [],
+      "openings": [
+        {
+          "id": "wc-wc-door",
+          "wall": 1,
+          "type": "door",
+          "offset": 0.1,
+          "width": 0.6,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        }
+      ],
+      "wallSpecs": [
+        {
+          "wall": 0,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 1,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 2,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 3,
+          "kind": "unknown",
+          "thickness": 0.14,
+          "note": "Граница с соседями/лестницей: конструкция и толщина требуют проверки."
+        }
+      ]
+    },
+    {
+      "id": "bath",
+      "name": "Ванная",
+      "origin": [
+        0,
+        3.3
+      ],
+      "vertices": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.65,
+          0.0
+        ],
+        [
+          1.65,
+          1.4
+        ],
+        [
+          0.0,
+          1.4
+        ]
+      ],
+      "height": 2.64,
+      "thickness": 0.14,
+      "floor": "tile",
+      "wallColor": 4293454303,
+      "furniture": [],
+      "engineering": [],
+      "openings": [
+        {
+          "id": "bath-bath-door",
+          "wall": 1,
+          "type": "door",
+          "offset": 0.35,
+          "width": 0.7,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        }
+      ],
+      "wallSpecs": [
+        {
+          "wall": 0,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 1,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 2,
+          "kind": "unknown",
+          "thickness": 0.14,
+          "note": "Граница с соседями/лестницей: конструкция и толщина требуют проверки."
+        },
+        {
+          "wall": 3,
+          "kind": "unknown",
+          "thickness": 0.14,
+          "note": "Граница с соседями/лестницей: конструкция и толщина требуют проверки."
+        }
+      ]
+    },
+    {
+      "id": "hall",
+      "name": "Прихожая",
+      "origin": [
+        1.65,
+        2.5
+      ],
+      "vertices": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          1.05,
+          0.0
+        ],
+        [
+          1.05,
+          2.25
+        ],
+        [
+          2.6,
+          2.25
+        ],
+        [
+          2.6,
+          3.5
+        ],
+        [
+          0.25,
+          3.5
+        ],
+        [
+          0.0,
+          2.2
+        ],
+        [
+          0.0,
+          0.8
+        ]
+      ],
+      "height": 2.64,
+      "thickness": 0.14,
+      "floor": "tile",
+      "wallColor": 4293454303,
+      "furniture": [],
+      "engineering": [],
+      "openings": [
+        {
+          "id": "hall-living-door",
+          "wall": 2,
+          "type": "door",
+          "offset": 0.4,
+          "width": 0.8,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        },
+        {
+          "id": "hall-bedroom-door",
+          "wall": 3,
+          "type": "door",
+          "offset": 0.25,
+          "width": 0.8,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        },
+        {
+          "id": "hall-kitchen-door",
+          "wall": 0,
+          "type": "door",
+          "offset": 0.2,
+          "width": 0.7,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        },
+        {
+          "id": "hall-wc-door",
+          "wall": 7,
+          "type": "door",
+          "offset": 0.1,
+          "width": 0.6,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        },
+        {
+          "id": "hall-bath-door",
+          "wall": 6,
+          "type": "door",
+          "offset": 0.35,
+          "width": 0.7,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        },
+        {
+          "id": "hall-entrance",
+          "wall": 5,
+          "type": "door",
+          "offset": 0.26191,
+          "width": 0.8,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        }
+      ],
+      "wallSpecs": [
+        {
+          "wall": 0,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 1,
+          "kind": "bearing",
+          "thickness": 0.14,
+          "note": "Поперечная панель: 140 мм по конструктивной схеме серии; сверить с квартирой."
+        },
+        {
+          "wall": 2,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 3,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 4,
+          "kind": "unknown",
+          "thickness": 0.14,
+          "note": "Граница с соседями/лестницей: конструкция и толщина требуют проверки."
+        },
+        {
+          "wall": 5,
+          "kind": "unknown",
+          "thickness": 0.14,
+          "note": "Граница с соседями/лестницей: конструкция и толщина требуют проверки."
+        },
+        {
+          "wall": 6,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        },
+        {
+          "wall": 7,
+          "kind": "partition",
+          "thickness": 0.08,
+          "note": "Перегородка по типовой схеме; номинально 80 мм, фактическую толщину уточнить."
+        }
+      ]
+    },
+    {
+      "id": "balcony",
+      "name": "Балкон",
+      "origin": [
+        5.7,
+        -0.35
+      ],
+      "vertices": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          3.0,
+          0.0
+        ],
+        [
+          3.0,
+          1.35
+        ],
+        [
+          0.0,
+          1.35
+        ]
+      ],
+      "height": 2.64,
+      "thickness": 0.14,
+      "floor": "concrete",
+      "wallColor": 4293454303,
+      "furniture": [],
+      "engineering": [],
+      "openings": [
+        {
+          "id": "balcony-balcony-door",
+          "wall": 2,
+          "type": "door",
+          "offset": 0.9,
+          "width": 0.7,
+          "height": 2.05,
+          "sill": 0,
+          "hingeRight": false
+        }
+      ],
+      "wallSpecs": [
+        {
+          "wall": 0,
+          "kind": "unknown",
+          "thickness": 0.08,
+          "note": "Ограждение балкона изображено условно; конструкция и размеры неизвестны."
+        },
+        {
+          "wall": 1,
+          "kind": "unknown",
+          "thickness": 0.08,
+          "note": "Ограждение балкона изображено условно; конструкция и размеры неизвестны."
+        },
+        {
+          "wall": 2,
+          "kind": "exterior",
+          "thickness": 0.3,
+          "note": "Панель между комнатой и балконом; номинал по серии, уточнить обмером."
+        },
+        {
+          "wall": 3,
+          "kind": "unknown",
+          "thickness": 0.08,
+          "note": "Ограждение балкона изображено условно; конструкция и размеры неизвестны."
+        }
+      ]
+    }
+  ],
+  "notes": "Типовой справочный пример II-49, не план конкретной квартиры. Несущие панели и толщины указаны по конструктивной схеме серии; неподтверждённые границы помечены отдельно. Контуры по осям стен: шаги 2,70 / 2,70 / 3,30 м, глубина 6,00 м. Внутренние отступы, проёмы и балкон оценены по рисунку. Источник: https://tipdoma.com/wp-content/uploads/MNIITEP.pdf Лист 35. Перепланировки и инженерные сети не моделировались. ",
+  "hiddenLayers": [],
+  "showFurniture": true
+}
