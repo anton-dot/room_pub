@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#F5F7F2">
+  <meta name="roomvibe-build" content="1.29.0+40">
   <meta name="description" content="RoomVibe — планировщик комнат, квартир и домов в 2D и 3D">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
@@ -33,6 +34,7 @@
     }
     h1 { margin: 0; font-size: 36px; line-height: 1.2; font-weight: 700; letter-spacing: -1.5px; }
     .tagline { margin: 10px 0 16px; color: #3d5948; font-size: 18px; }
+    .build-signature { margin: 8px 0 0; font-size: 12px; color: #596e60; }
     #loading-status, #loading-hint { color: #748076; font-size: 13px; line-height: 1.5; margin: 0; }
     #loading-hint { margin-top: 12px; }
     #loading-retry { margin-top: 20px; padding: 12px 24px; border: 0; border-radius: 24px; background: #296448; color: white; font: inherit; cursor: pointer; }
@@ -80,6 +82,7 @@
         </g>
       </svg>
       <h1>RoomVibe</h1>
+      <p class="build-signature">Версия <span id="loading-version">1.29.0+40</span> · Автор: anton-dot</p>
       <p class="tagline">Собираем пространство</p>
       <p id="loading-status">Загружаем приложение…</p>
       <p id="loading-hint" hidden></p>
@@ -88,6 +91,7 @@
     </div>
   </div>
   <script src="loading.js"></script>
-  <script src="flutter_bootstrap.js" async onerror="window.roomVibeLoading.fail()"></script>
+  <script src="updates.js?v=1.29.0%2B40"></script>
+  <script src="flutter_bootstrap.js?v=1.29.0%2B40" async onerror="window.roomVibeLoading.fail()"></script>
 </body>
 </html>
